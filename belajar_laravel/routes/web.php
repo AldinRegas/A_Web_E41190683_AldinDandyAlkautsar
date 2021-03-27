@@ -16,6 +16,9 @@ use App\Http\Controllers\ManagementUserController;
 Route::get('/', function () {
     return view('welcome');
 });
+route::get("/home", function() {
+    return view("home");
+});
 //Route::get('user', [ManagementUserController::class, 'index']);
 Route::resource('user', ManagementUserController::class);
 

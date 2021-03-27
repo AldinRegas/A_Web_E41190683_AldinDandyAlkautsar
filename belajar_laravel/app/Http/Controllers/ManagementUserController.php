@@ -8,7 +8,12 @@ class ManagementUserController extends Controller
 {
     public function index(){
         //return "Halo ini adalah method index, dalam controller ManagementUser.";
-        return "Method ini nantinya akan digunakan mengambil semua data user";
+        //return "Method ini nantinya akan digunakan mengambil semua data user";
+        $nama = "Aldin Dandy Alkautsar";
+
+        $pelajaran = ["Algoritma & Pembrograman","Kalkulus","Pemrograman Web"];
+
+        return view('home', compact('nama','pelajaran'));
     }
     public function create()
     {
